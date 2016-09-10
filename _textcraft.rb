@@ -20,13 +20,10 @@ require 'sinatra/base'
 require 'sinatra/cookies'
 require 'websocket-eventmachine-client'
 
+load 'config.rb'
+
 IS_DEVELOPMENT = false
 Thread.abort_on_exception = true
-
-DEFAULT_DB_URL = "mysql://SOME_DATABASE/textcraft"
-SLACK_APP_CLIENT_ID = "SOME_SLACK_CLIENT_ID"
-SLACK_APP_CLIENT_SECRET = "SOME_SLACK_CLIENT_SECRET"
-
 
 class String
 
